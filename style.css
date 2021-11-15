@@ -1,0 +1,139 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+/* variables */
+:root {
+  /* ### Primary */
+
+  /* Bright orange */
+  --primary-1: hsl(31, 77%, 52%);
+  /* Dark cyan */
+  --primary-2: hsl(184, 100%, 22%);
+  /* Very dark cyan */
+  --primary-3: hsl(179, 100%, 13%);
+
+  /* ### Neutral */
+
+  /* Transparent white (paragraphs) */
+  --neutral-1: hsla(0, 0%, 100%, 0.75);
+  /* Very light gray (background, headings, buttons */
+  --neutral-2: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--neutral-2);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  padding: 2rem 0rem;
+}
+
+p {
+  color: var(--neutral-1);
+  line-height: 1.7rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+section.vehicle {
+  padding: 3.1rem;
+}
+
+section.vehicle img,
+section.vehicle h2,
+section.vehicle p {
+  margin-bottom: 2rem;
+} 
+
+#sedans {
+  background-color: var(--primary-1);
+}
+
+#suv {
+  background-color: var(--primary-2);
+}
+
+#luxury {
+  background-color: var(--primary-3);
+}
+
+h2.vehicle-type {
+  color: var(--neutral-2);
+  font-size: 2rem;
+  font-family: 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+}
+
+a {
+  background-color: var(--neutral-2);
+  padding: .8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 30px;
+  display: inline-block;
+  margin-bottom: 0px;
+  border: 2px solid transparent;
+}
+
+#sedans a {
+  color: var(--primary-1);
+}
+
+#suv a {
+  color: var(--primary-2);
+}
+
+#luxury a {
+  color: var(--primary-3);
+}
+
+a:hover {
+  border: 2px solid var(--neutral-2);
+  background-color: transparent;
+  color: var(--neutral-2) !important;
+}
+
+.attribution {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    width: 90%;
+  }
+
+  section.vehicle p {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    flex-direction: row;
+    width: 63%;
+  }
+
+  section.vehicle p {
+    margin-bottom: 4rem;
+  }
+}
