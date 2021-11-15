@@ -120,6 +120,7 @@ a:hover {
   main {
     flex-direction: row;
     width: 90%;
+    min-width: 768px;
   }
 
   section.vehicle p {
